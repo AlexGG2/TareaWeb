@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tarea1</title>
+</head>
+<body>
+    <header>
+      <div class="usuario">
+        <figure>
+          <img src="img/usuario.jpg" type="image/jpg">
+        </figure>
+      </div>
+        Sistema integrado de gestión
+    </header>
+
+    <nav>
+        <form action="#" method="POST">
+            <label for="texto_buscar">Buscar en la web</label>                
+                <input type="search" id="texto_buscar" placeholder="Ingrese texto">
+                <button class="buscar"><img src="img/buscar.png" alt=""><br>Buscar                    
+                </button>
+        </form>
+    </nav>
+    <aside>
+        <form action="#" method="POST">
+          <fieldset>
+            <h2>Menú</h2>
+            <button type="submit" value="Agregar">Agregar Productos 
+                <br><img src="img/guardar.png" alt="">
+            </button>
+            <br><br>
+            <button type="submit" value="Categoria">Administrar Categorias
+                <br><img src="img/administrar.png" alt="">
+            </button>
+            <br><br>
+            <button type="submit" value="Existencia">Existencias
+                <br><img src="img/existencias.png" alt="">
+            </button>
+            <br><br>
+            <button type="submit" value="Pagos">Administrar Pagos
+                <br><img src="img/pagos.png" alt="">
+            </button>
+          </fieldset>            
+        </form>
+    </aside>
+    <main>
+        <article>            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Agregar Producto</legend>
+                    <form action="#">
+                        <table width="500" cellspacing="0" cellpadding="5" align="center">
+                            <tbody>
+                              <tr>
+                                <td>Código*</td>
+                                <td><input type="tel" id="codigo" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar solo 6 números" required>
+                                </td>
+                                <td>
+                                    <button type="button">Validar</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Nombre*</td>
+                                <td colspan="2">
+                                    <input type="text" id="Nombre" maxlength="100" placeholder="Solo letras y números" pattern="[0-9a-zA-Z\s]{2,100}" title="Ingresar solo letras y números" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Abreviatura</td>
+                                <td colspan="2">
+                                    <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z\s]{2,10}" title="Ingresar solo letras">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Categoria*</td>
+                                <td colspan="2">
+                                    <select id="opciones" required>
+                                        <option>Elegir...</option>
+                                        <option>Panes Especiales</option>
+                                        <option>Lácteos</option>
+                                        <option>Pasteles</option>
+                                    </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>RUC Proveedor*</td>
+                                <td colspan="2">
+                                    <input type="number" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar solo números" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Precio*</td>
+                                <td colspan="2">
+                                    <input type="number" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar solo números" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Color de etiqueta</td>
+                                <td colspan="2">
+                                    <input type="color">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Fecha*</td>
+                                <td colspan="2">
+                                    <input type="date" id="fecha" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Estado*</td>
+                                <td colspan="2">
+                                    <input type="radio" id="activo" name="opcion1" required>Activo
+                                    <input type="radio" id="suspendido" name="opcion1" required>Suspendido
+                                    <input type="radio" id="baja" name="opcion1" required>De Baja
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Afecto a impuesto*</td>
+                                <td colspan="2">
+                                    <input type="checkbox" id="impuesto" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Foto</td>
+                                <td>
+                                    <input type="file" id="Foto" accept="image/png,image/jpg">
+                                </td>
+                                <td><img src="img/imagen.PNG" alt=""></td>
+                              </tr>
+                              <tr>
+                                <td>Descripción</td>
+                                <td colspan="2">
+                                    <textarea id="descripcion"></textarea>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="2">
+                                    <input type="submit" value="Enviar">
+                                    <input type="reset" id="limpiar">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </form>
+                </fieldset>
+                  
+              </form>
+        </article>
+    </main>
+
+    <footer>
+      <table width="100%" cellspacing="0" cellpadding="5">
+        <tbody>
+          <tr>
+            <td><a href="#">¿Qué hacemos?</a></td>
+            <td><a href="#">Enlaces Principales</a></td>
+            <td><a href="#">Contáctenos</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+</body>
+</html>
