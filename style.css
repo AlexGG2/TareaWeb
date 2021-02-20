@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(183, 190, 190);
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 5% 5% 80% 10%;
+    grid-auto-columns: 3fr;
+    gap: 10px;
+    color: white;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(71, 82, 180);
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana', Geneva, sans-serif;
+    text-align: center;
+    border: solid black;
+    padding-bottom: 60px;   
+}
+
+.usuario img{
+    clip-path: circle(50% at 50% 50%);
+    opacity: 60%;
+    width: 32px;
+    height: 32px;
+    float: right;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(139, 66, 66);
+    height: 46px;
+    padding-top: 2px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    border: solid black;
+}
+
+main {
+    grid-area: main;
+    margin: 10px;
+    display: grid;
+    align-items: stretch;
+    gap: 10px;
+    border: solid black;
+}
+
+main article {
+    background-color: lightblue;;
+    padding: 10px;
+    color: black;
+    font-family: “Courier New, Courier, monospace”;
+}
+
+aside {
+    grid-area: aside;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    background-color: lightblue;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: solid black;
+    font-family: “Courier New, Courier, monospace”;
+}
+
+aside button {
+    background-color: rgb(226, 125, 43);
+    width: 200px;
+}
+
+aside article {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+textarea { 
+    resize: none;
+    width: 300px;
+    height: 80px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+    border: black solid;
+}
+
+footer table {
+    padding-top: 25px;
+    text-align: center;
+}
+
+footer table a{
+   text-decoration: none;
+   color: black;
+}
+
+table img{
+    width: 32px;
+    height: 32px;
+}
