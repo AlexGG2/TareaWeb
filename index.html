@@ -11,10 +11,10 @@
     <header>
       <div class="usuario">
         <figure>
-          <img src="img/usuario.jpg" type="image/jpg">
+          <img src="img/usuario.jpg" type="image/jpg" alt="Usuario conectado">
         </figure>
       </div>
-        Sistema integrado de gestión
+        <h3>Sistema integrado de gestión</h3>
     </header>
 
     <nav>
@@ -27,24 +27,24 @@
     </nav>
     <aside>
         <form action="#" method="POST">
-          <fieldset>
+          
             <h2>Menú</h2>
             <button type="submit" value="Agregar">Agregar Productos 
-                <br><img src="img/guardar.png" alt="">
+                <br><img src="img/guardar.png" alt="Boton Guardar">
             </button>
             <br><br>
             <button type="submit" value="Categoria">Administrar Categorias
-                <br><img src="img/administrar.png" alt="">
+                <br><img src="img/administrar.png" alt="Boton Administrar">
             </button>
             <br><br>
             <button type="submit" value="Existencia">Existencias
-                <br><img src="img/existencias.png" alt="">
+                <br><img src="img/existencias.png" alt="Boton Existencias">
             </button>
             <br><br>
             <button type="submit" value="Pagos">Administrar Pagos
-                <br><img src="img/pagos.png" alt="">
+                <br><img src="img/pagos.png" alt="Boton Pagos">
             </button>
-          </fieldset>            
+                     
         </form>
     </aside>
     <main>
@@ -53,7 +53,7 @@
                 <fieldset>
                     <legend>Agregar Producto</legend>
                     <form action="#">
-                        <table width="500" cellspacing="0" cellpadding="5" align="center">
+                        <table cellspacing="0" cellpadding="5">
                             <tbody>
                               <tr>
                                 <td>Código*</td>
@@ -89,13 +89,13 @@
                               <tr>
                                 <td>RUC Proveedor*</td>
                                 <td colspan="2">
-                                    <input type="number" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar solo números" required>
+                                    <input type="tel" maxlength="11" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar solo números" required>
                                 </td>
                               </tr>
                               <tr>
                                 <td>Precio*</td>
                                 <td colspan="2">
-                                    <input type="number" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar solo números" required>
+                                    <input type="number" step="0.01" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar solo números" required>
                                 </td>
                               </tr>
                               <tr>
@@ -129,7 +129,7 @@
                                 <td>
                                     <input type="file" id="Foto" accept="image/png,image/jpg">
                                 </td>
-                                <td><img src="img/imagen.PNG" alt=""></td>
+                                <td><img src="img/imagen.PNG" alt="Subir IMagen"></td>
                               </tr>
                               <tr>
                                 <td>Descripción</td>
@@ -154,7 +154,7 @@
     </main>
 
     <footer>
-      <table width="100%" cellspacing="0" cellpadding="5">
+      <table cellspacing="0" cellpadding="5">
         <tbody>
           <tr>
             <td><a href="#">¿Qué hacemos?</a></td>
