@@ -94,6 +94,7 @@ footer {
 }
 
 footer table {
+    width: 100%;
     padding-top: 25px;
     text-align: center;
 }
@@ -106,4 +107,9 @@ footer table a{
 table img{
     width: 32px;
     height: 32px;
+}
+
+article table{
+    margin-left: 160px;
+    width: 500px;
 }
